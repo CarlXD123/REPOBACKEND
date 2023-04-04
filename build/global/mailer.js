@@ -30,8 +30,8 @@ exports.sendPassword = void 0;
 const fs = __importStar(require("fs"));
 const nodemailer_1 = __importDefault(require("nodemailer"));
 const handlebars_1 = __importDefault(require("handlebars"));
-const urlLogo = `http://${process.env.URL}:${process.env.PORT}/public/imgs/logo/logo-redlab.png`;
-const baseUrl = `http://${process.env.URL}:${process.env.PORT}`;
+const urlLogo = `https://backendredlabperu.onrender.com/public/imgs/logo/logo-redlab.png`;
+const baseUrl = `https://subiditafrontend-2023.vercel.app/`;
 const readHTMLFile = function (path, callback) {
     fs.readFile(path, { encoding: "utf-8" }, function (err, html) {
         if (err) {
